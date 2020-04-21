@@ -15,4 +15,6 @@ public class IpUtilsTest {
         String ip = IpUtils.getIp();
         System.out.println("ip地址："+ ip);
     }
+
+
 }
