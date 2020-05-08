@@ -26,6 +26,18 @@ public class CuratorZookeeperLock {
         String rootPath="/lock";
         InterProcessMutex interProcessMutex = new InterProcessMutex(client, rootPath);
         //interProcessMutex.acquire();
+        try {
+            interProcessMutex.acquire();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }finally {
+            try {
+                interProcessMutex.release();
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+        }
+
 
     }
 }

@@ -17,7 +17,7 @@ import org.springframework.transaction.support.DefaultTransactionDefinition;
 public class PlatformTransaction {
 
     /**
-     * 手动开启事务
+     * 手动开启事务,可以使用模板模式实现
      */
     public void start(DataSourceTransactionManager transactionManager){
         // 传播级别的定义

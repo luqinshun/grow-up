@@ -1,6 +1,5 @@
 package com.lqs.study.growup.tool;
 
-import org.junit.Test;
 import org.springframework.http.HttpEntity;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpMethod;
@@ -15,7 +14,6 @@ import org.springframework.web.client.RestTemplate;
  **/
 public class HttpUtilsTest {
 
-    @Test
     public void httpTest(){
         RestTemplate restTemplate = new RestTemplate();
         HttpHeaders httpHeaders = new HttpHeaders();
