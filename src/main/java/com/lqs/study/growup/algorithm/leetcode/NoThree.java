@@ -1,13 +1,6 @@
-package com.lqs.study.growup.leetcode;
-
-import com.google.common.collect.Lists;
+package com.lqs.study.growup.algorithm.leetcode;
 
 import java.util.*;
-import java.util.concurrent.CountDownLatch;
-import java.util.concurrent.CyclicBarrier;
-import java.util.concurrent.ScheduledThreadPoolExecutor;
-import java.util.concurrent.locks.AbstractQueuedSynchronizer;
-import java.util.concurrent.locks.ReadWriteLock;
 
 /**
  * @program: grow-up

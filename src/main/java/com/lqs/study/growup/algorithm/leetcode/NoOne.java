@@ -1,4 +1,4 @@
-package com.lqs.study.growup.leetcode;
+package com.lqs.study.growup.algorithm.leetcode;
 
 import java.util.HashMap;
 import java.util.Map;

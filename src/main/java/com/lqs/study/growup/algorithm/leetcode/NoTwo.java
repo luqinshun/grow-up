@@ -1,4 +1,4 @@
-package com.lqs.study.growup.leetcode;
+package com.lqs.study.growup.algorithm.leetcode;
 
 /**
  * @program: grow-up
