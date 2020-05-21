@@ -16,7 +16,8 @@ import java.util.stream.Collectors;
 public class LambdaDistinct {
 
     /**
-     * 方式一： 通过重写类的equals 方法来实现去重
+     * 方式一： 通过重写类的equals和hashCode方法来实现去重
+     *
      */
 
     public static void distinctProperty(){
