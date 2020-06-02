@@ -128,7 +128,7 @@ public class SimpleTree<T> {
      * 使用队列的方式：实现层次遍历
      * @param node
      */
-    public List<T> levelTraversal(TreeNode<T> node){
+    public List<T> levelTraversalForeach(TreeNode<T> node){
         if(node==null){
             return Lists.newArrayList();
         }
@@ -147,6 +147,31 @@ public class SimpleTree<T> {
             }
         }
         return dataList;
+    }
+
+    /**
+     * 递归的方式实现层次遍历
+     * @param node
+     * @return
+     */
+    public List<T> levelTraversal(TreeNode<T> node){
+        if(node==null){
+            return Lists.newArrayList();
+        }
+        List<T> dataList=new ArrayList<>();
+        addLevelTraversal(node,dataList);
+        return dataList;
+    }
+
+
+    public void addLevelTraversal(TreeNode<T> node,List<T> dataList){
+        dataList.add(node.data);
+        if(node.left!=null){
+            addLevelTraversal(node.left,dataList);
+        }
+        if(node.right!=null){
+            addLevelTraversal(node.right,dataList);
+        }
     }
 
 
