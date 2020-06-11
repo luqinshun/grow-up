@@ -1,5 +1,6 @@
 package com.lqs.study.growup.thread.productConsumer.queue;
 
+import java.util.HashMap;
 import java.util.concurrent.LinkedBlockingQueue;
 
 /**
@@ -12,7 +13,9 @@ public class QueueStorage {
 
     private LinkedBlockingQueue<Object> storage=new LinkedBlockingQueue<>();
 
+
     public void produce(){
+        new HashMap<>();
         try {
             storage.put(new Object());
         } catch (InterruptedException e) {
